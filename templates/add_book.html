@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <h1>Add Book</h1>
+<form action="/create">
+    {% csrf_token %}
+    <label class="form-group">Title :</label><input class="form-control" type="text" name="title"/>
+        <label class="form-group">Price :</label><input class="form-control" type="number" name="price"/>
+        <label class="form-group">Author :</label><input class="form-control" type="text" name="author"/><br>
+        <input class="btn btn-success" type="submit" value="Create"/>
+</form>
+</div>
+</body>
+</html>
